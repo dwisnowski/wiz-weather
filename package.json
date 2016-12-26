@@ -1,0 +1,35 @@
+{
+  "name": "wiz-weather",
+  "version": "0.0.0",
+  "description": "An application capture alerts from weather and send messages back to sonos",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "babel -d lib/ src/",
+    "prepublish": "npm run compile"
+  },
+  "keywords": [
+    "babel"
+  ],
+  "author": "David Wisnowski",
+  "license": "MIT",
+  "dependencies": {
+    "async": "^2.1.4",
+    "weather-js": "^1.0.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-preset-es2015": "^6.18.0",
+    "anesidora": "^1.2.0",
+    "aws-sdk": "^2.7.10",
+    "basic-auth": "~1.0.3",
+    "fuse.js": "^2.2.0",
+    "node-static": "~0.7.0",
+    "request-promise": "~1.0.2",
+    "sonos-discovery": "https://github.com/jishi/node-sonos-discovery/archive/v1.2.5.tar.gz"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dwisnowski/wiz-weather.git"
+  }
+}
